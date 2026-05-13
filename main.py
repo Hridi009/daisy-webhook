@@ -11,6 +11,3 @@ async def receive_sms(request: Request):
 @app.get("/")
 def home():
     return {"message": "DaisySMS webhook ✅"}
-
-"_main_":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
