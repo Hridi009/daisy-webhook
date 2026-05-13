@@ -1,5 +1,4 @@
 from fastapi import FastAPI, Request
-import uvicorn
 
 app = FastAPI()
 
@@ -13,5 +12,5 @@ async def receive_sms(request: Request):
 def home():
     return {"message": "DaisySMS webhook ✅"}
 
-if _name_ == "_main_":
+"_main_":
     uvicorn.run(app, host="0.0.0.0", port=8000)
